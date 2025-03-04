@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Cart</title>
+</head>
+<body class="container mt-5">
+    <h1 class="text-center">🛍️ Your Cart 🛍️</h1>
+    <ul class="list-group">
+        {% for item in cart_items %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ item.product.name }} (x{{ item.quantity }})
+                <span class="badge bg-primary">${{ item.product.price * item.quantity }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+    <h3 class="mt-4">Total: ${{ total_price }}</h3>
+</body>
+</html>
