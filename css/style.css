@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: aqua;
+    height: 10vh;
+    width: 100%;
+}
+/*--------------------------------------------------*/
+.brand{
+    position: absolute;
+    padding: 10px;
+    height: 40px;
+}
+/*--------------------------------------------------*/
+
+#brand {height: 100px;
+width: 100px ;}
+/*--------------------------------------------------*/
+#login {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
