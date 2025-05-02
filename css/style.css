@@ -41,19 +41,27 @@
 /*=======================================================================================================*/
 body{
     background-color:var(--background-main) ;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-div {
-    border-radius: 10px;
+div{
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 .header {
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     position: relative;
     background-color: var(--primary-light);
     height: 80px;
     width: 100%;
+    max-width: 100VW;
+    overflow: hidden;
 }
 /*--------------------------------------------------*/
 .brand{
@@ -80,6 +88,7 @@ width: 110px ;}
   
   .login-link:hover {
     color: var(--secondary); /* وقتی موس رفت روش، رنگ آیکون عوض شه */
+    
   }
   /*-----------------------------------------------------------------------------------*/
 
@@ -135,15 +144,23 @@ width: 110px ;}
 
 /* استایل نوار لینک‌ها */
 .nav-bar {
-    
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
     padding: 10px 20px;
     margin-top: 10px; /* فاصله از هدر */
     direction: rtl;
+    background-color: var(--background-hero)
   }
   
+  .nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+  }
   .nav-item {
     position: relative;
     text-align: center;
@@ -151,12 +168,12 @@ width: 110px ;}
   
   .nav-item a {
     font-size: 24px;
-    color: #2f3e3e;
+    color: var(--secondary);
     transition: color 0.3s;
   }
   
   .nav-item a:hover {
-    color: #1b5e57; /* سبز کله‌غازی تیره */
+    color: var(--primary-dark); 
   }
   
   /* Tooltip مخفی و ظاهر با انیمیشن */
@@ -181,4 +198,39 @@ width: 110px ;}
     opacity: 1;
     transform: translateX(50%) translateY(5px);
   }
+
+  /*---------------------------------------------------------------------------------*/
+  .user-info-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-light);
+    gap: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .user-info-icons .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Vazirmatn, sans-serif; 
+  }
+/*---------------------------------------------------------------------------------------------------*/
+.change-language{
+position: relative;
+text-align: center;
+}
+
+.change-language a{
+ font-size: 24px;
+  transition: color 0.3s;
+  color: var(--secondary);
+}
+
+.change-language a:hover {
+  background-color: var(--primary-dark);
+}
+
+
   
