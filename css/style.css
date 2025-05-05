@@ -282,5 +282,33 @@ text-align: center;
   font-size: 18px;
 }
 
+/*+++++++++++++++++++++++++++++++++++++++++++++login file css ++++++++++++++++++++++++++++++++++++++*/
+.login-box {
+  border: var(--primary) 5px;
+  border-radius: 100px;
+  border-style: solid; 
+  box-shadow: var(--secondary-dark);
+  padding: 50px;
+  margin: 20vh;
+}
 
+h1{
+  text-align: center;
+  text-decoration: solid;
+  font-family: sans-serif;
+  color: var(--text-main);
+ 
+}
   
+.password-login-box , .email-login-box { 
+  border: var(--gray) 1px;
+  border-radius: 20px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.password-login-box , .email-login-box :hover { 
+
+}
