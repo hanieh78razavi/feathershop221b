@@ -281,7 +281,18 @@ text-align: center;
  
   font-size: 18px;
 }
+.banner{
+  width: 1536px;
+  height: 1024px;
+}
 
+div.baner {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 /*+++++++++++++++++++++++++++++++++++++++++++++login file css ++++++++++++++++++++++++++++++++++++++*/
 .login-box {
   border: var(--primary) 5px;
@@ -312,3 +323,4 @@ h1{
 .password-login-box , .email-login-box :hover { 
 
 }
+
