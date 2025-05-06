@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="javascript" href="js/main.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<body>
+<body class="login-body">
+   
     <div class="login-box">
         <!--باکس اصلی که وسط قرار میگیره-->
         <h1>login</h1>
         <!------------------------------------------->
         <div class="email-login-box">
-            <h4>email : </h4>
+          
+                <label for="email">email: </label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            
         </div>
         <!----------------------------------------->
         <div class="password-login-box">
-            <h4>password : </h4>
+          
+            <label for="password">password: </label>
+            <input type="password" id="password" required placeholder="enter your password">
+          
         </div>
+
+        <button></button>
+    
     </div>
 </body>
 </html>

@@ -293,12 +293,23 @@ div.baner {
   align-items: center;
 
 }
+
 /*+++++++++++++++++++++++++++++++++++++++++++++login file css ++++++++++++++++++++++++++++++++++++++*/
+.login-body {
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .login-box {
-  border: var(--primary) 5px;
-  border-radius: 100px;
+  background-color: var(--secondary);
+  border: var(--primary-dark) 5px;
+  border-radius:40px;
   border-style: solid; 
-  box-shadow: var(--secondary-dark);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 50px;
   margin: 20vh;
 }
@@ -323,4 +334,28 @@ h1{
 .password-login-box , .email-login-box :hover { 
 
 }
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #000 !important;
+}
+
+
+
 
