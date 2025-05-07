@@ -463,6 +463,78 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #000 !important;
 }
 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       admin panel       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+body.admin-panel {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
 
+div.admin-panel-title {
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+  width: 70vh;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
+h1.panel-title {
+ font-family: Vazirmatn , sans-serif;
+ font-weight: bold;
+ color: var(--primary);
+
+}
+/*--------------------------------add product-------------*/
+                                 
+div.admin-panel-add-product {
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+  width: 70vh;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2.section-title {
+  font-family: Vazirmatn , sans-serif;
+  font-weight: bold;
+  color: var(--primary);
+ 
+ }
+
+.admin-panel-add-product form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.admin-panel-add-product label{
+  grid-column: span 2;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.admin-panel-add-product input ,
+.admin-panel-add-product textarea ,
+.admin-panel-add-product select ,
+.admin-panel-add-product button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  grid-column: span 2;
+}
