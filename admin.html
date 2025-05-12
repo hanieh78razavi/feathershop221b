@@ -27,21 +27,31 @@
         <h2 class="section-title">افزودن محصول</h2>
 
         <form action="#" method="post">
-          
-            <label for="name">:اسم محصول </label>
-            <input type="text" id="name" name="name" class="input-field" required>
             
-            <label for="price">:قیمت</label>
+             <div class="form-row">
+            <label for="name">اسم محصول :</label>
+            <input type="text" id="name" name="name" class="input-field" required>
+            </div>
+
+            <div class="form-row">
+            <label for="price">قیمت :</label>
             <input type="number" id="price" name="price" class="input-field" required>
+            </div>
 
-            <label for="description">:توضیحات </label>
+            <div class="form-row">
+            <label for="description">توضیحات :</label>
             <textarea id="description" name="description" class="input-field" rows="3" required ></textarea>
+            </div>
 
-            <label for="Image">:تصویر محصول </label>
+            <div class="form-row">
+            <label for="Image">تصویر محصول :</label>
             <input type="file" id="image" name="image" class="input-field" accept="image/*">
+            </div>
 
-            <label for="Stock"> :موجودی محصول در انبار </label>
+            <div class="form-row">
+            <label for="Stock"> موجودی محصول در انبار :</label>
             <input type="number" id="stock" name="stock" class="input-field" required>
+            </div>
 
             <button type="submit" class="submit-button">ارسال به کالکشن</button>
         </form>

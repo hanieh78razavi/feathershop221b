@@ -606,6 +606,33 @@ select{
   background-color: var(--primary-dark);
  }
 
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  direction: rtl;
+  gap: 10px;
+}
+
+.form-row label {
+  width: 150px;
+  text-align: right;
+  font-weight:normal;
+  color: var(--text-main);
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  direction: rtl;
+}
+
+
+
  /*Optional Product List Section Placeholder*/
  .product-list-button{
   background-color: var(--secondary);
