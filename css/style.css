@@ -5,7 +5,7 @@
 
 :root {
     /* ==== 🎨 رنگ‌های اصلی سایت ==== */
-    --primary: #01796F;           /* ✅ رنگ برند اصلی (سبز کله‌غازی)، استفاده برای دکمه‌ها، لینک‌ها و تاکید‌ها */
+    --primary: #01796F;           /* ✅ رنگ برند اصلی  */
     --primary-light: #3BA99D;     /* 🔆 نسخه روشن‌تر برای هاور، پس‌زمینه کارت‌ها یا باکس‌های خنثی */
     --primary-dark: #01564A;      /* 🌒 نسخه تیره‌تر برای فوتر، نوار بالا یا تاکید بیشتر */
     --primary-transparent: rgba(1, 121, 111, 0.1); /*برای هاور های سبز کله غازی */
@@ -353,6 +353,28 @@ text-align: center;
   }
 }
 
+@media (max-width: 768px) {
+  div.baner {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .banner {
+    width: 90%;
+  }
+
+  .baner-text {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+   .banner-text h2 {
+    font-size: 1.3rem;
+  }
+
+}
+
+
 .product-card {
   background-color: var(--secondary-light);
   border-radius: 20px;
@@ -391,47 +413,52 @@ text-align: center;
 
 
 div.baner {
-  margin: 10px;
+ margin: 10px auto;
   display: flex;
-  justify-content:left;
-  align-items:flex-start;
+  justify-content: center;
+  align-items: flex-start;
   gap: 40px;
   padding: 40px;
   background-color: var(--secondary);
   flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto; 
+  max-width: 1000px;
+  border-radius: 12px;
 }
 
 .banner{
-  width:700px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border: 2px solid var(--primary-dark);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .baner-text{
   font-family: Vazirmatn , sans-serif;
   flex: 1;
+  min-width: 300px;
   max-width: 500px;
   color: var(--primary-dark);
-  font-size: 1.5rem;
-  line-height: 2.3;
+  font-size: 1.2rem;
+  line-height: 2.2;
   direction: rtl;
-  text-align: justify;
+  text-align: right;
   
 }
 
 .baner-text p {
   margin-bottom: 1.4rem;
   font-family: Vazirmatn , sans-serif;
+  font-weight: 400;
 }
 
 .baner-text h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
   color: var(--primary);
+  font-weight: 700;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++login file css ++++++++++++++++++++++++++++++++++++++*/
