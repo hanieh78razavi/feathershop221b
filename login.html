@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>ورود</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="javascript" href="js/main.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
 </head>
+
+
 <body class="login-body">
    
     <div class="login-box">
-        <!--باکس اصلی که وسط قرار میگیره-->
-        <h1>login</h1>
-        <!------------------------------------------->
-        <div class="email-login-box">
-          
-                <label for="email">email: </label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 
+        <h1 class="login-title">ورود به حساب کاربری</h1>
+          <form action="#" method="POST" class="login-form">
+
+            <div class="form-field">
             
-        </div>
-        <!----------------------------------------->
-        <div class="password-login-box">
-          
-            <label for="password">password: </label>
-            <input type="password" id="password" required placeholder="enter your password">
-          
-        </div>
+                <label for="email"><i class="fas fa-envelope"></i> ایمیل: </label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <!----------------------------------------->
+            <div class="form-field">
+            
+                <label for="password"><i class="fas fa-lock"></i> رمز عبور: </label>
+                <input type="password" id="password" required placeholder="رمز عبور خود را وارد کنید">
+            </div>
 
-        <button></button>
-    
+            <button type="submit" class="login-submit-button">ورود یا ثبت نام</button>
+          </form>
     </div>
 </body>
 </html>
