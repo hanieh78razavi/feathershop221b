@@ -4,10 +4,10 @@
 
 
 :root {
-    /* ==== 🎨 رنگ‌های اصلی سایت ==== */
-    --primary: #01796F;           /* ✅ رنگ برند اصلی  */
-    --primary-light: #3BA99D;     /* 🔆 نسخه روشن‌تر برای هاور، پس‌زمینه کارت‌ها یا باکس‌های خنثی */
-    --primary-dark: #01564A;      /* 🌒 نسخه تیره‌تر برای فوتر، نوار بالا یا تاکید بیشتر */
+    /* ====  رنگ‌های اصلی سایت ==== */
+    --primary: #01796F;           /*  رنگ برند اصلی  */
+    --primary-light: #3BA99D;     /*  نسخه روشن‌تر برای هاور، پس‌زمینه کارت‌ها یا باکس‌های خنثی */
+    --primary-dark: #01564A;      /* نسخه تیره‌تر برای فوتر، نوار بالا یا تاکید بیشتر */
     --primary-transparent: rgba(1, 121, 111, 0.1); /*برای هاور های سبز کله غازی */
     --black-transparent: rgba(27, 27, 27, 0.05);/*برای هاور های مشکی */
                                                       
@@ -17,37 +17,37 @@
    --blur-light: blur(4px); /*برای مقادیر blur*/
    --blur-heavy: blur(10px);
 
-    --secondary: #F5F5DC;         /* ✅ رنگ کرمی ملایم برای پس‌زمینه‌های اصلی، بخش‌هایی با حس گرم و دوستانه */
-    --secondary-light: #FAF9F6;   /* 🔆 برای پس‌زمینه خیلی روشن یا داخل کارت‌ها */
-    --secondary-dark: #D8CAB8;    /* 🌒 برای جداکننده‌ها یا مرزها با کنتراست پایین */
+    --secondary: #F5F5DC;        
+    --secondary-light: #FAF9F6;  
+    --secondary-dark: #D8CAB8;   
   
-    /* ==== 🌈 رنگ‌های خنثی برای متن، بک‌گراند، مرز ==== */
-    --white: #FFFFFF;             /* 🧼 سفید خالص برای متن روشن روی بک تیره یا زمینه‌ها */
-    --black: #1B1B1B;             /* 🖤 مشکی ملایم برای متن اصلی و لوگو */
-    --gray: #888888;              /* ⚙️ متن‌های ثانویه، متن کوچک، توضیحات */
-    --light-gray: #E0E0E0;        /* 🧊 مرزهای ظریف، بک‌گراند دکمه غیرفعال */
-    --dark-gray: #333333;         /* 🌑 جایگزین مشکی در فوتر یا متن مهم */
+    /* ==== رنگ‌های خنثی برای متن، بک‌گراند، مرز ==== */
+    --white: #FFFFFF;             
+    --black: #1B1B1B;            
+    --gray: #888888;             
+    --light-gray: #E0E0E0;        
+    --dark-gray: #333333;        
   
     /* ==== 💡 رنگ‌های خاص (موفقیت، هشدار، خطا) ==== */
-    --success: #28a745;           /* ✅ وضعیت موفقیت، پیام پرداخت موفق یا نوتیف سبز */
-    --warning: #ffc107;           /* ⚠️ هشدارها، پیام‌های اطلاع‌رسانی نارنجی */
-    --error: #dc3545;             /* ❌ پیام خطا، اخطار، هشدار بحرانی */
+    --success: #28a745;          
+    --warning: #ffc107;          
+    --error: #dc3545;           
   
-    /* ==== 🎯 رنگ‌های CTA (برای جذب توجه کاربر) ==== */
-    --cta: #FF6B6B;               /* ❤️ دکمه خرید، افزودن به سبد، آیکن علاقه‌مندی */
-    --cta-hover: #e85c5c;         /* 🔁 هاور روی دکمه CTA */
+    /* ====  رنگ‌های CTA (برای جذب توجه کاربر) ==== */
+    --cta: #FF6B6B;              
+    --cta-hover: #e85c5c;       
   
     /* ==== ☁️ رنگ‌های بک‌گراند و جزئیات ==== */
-    --background-main: var(--secondary);        /* 🏠 زمینه کلی سایت */
-    --background-card: var(--secondary-light);  /* 📦 زمینه کارت‌ها یا محصول‌ها */
-    --background-hero: var(--primary-light);    /* 💥 پس‌زمینه بخش اصلی (مثلاً بنر معرفی) */
+    --background-main: var(--secondary);        /*  زمینه کلی سایت */
+    --background-card: var(--secondary-light);  /* زمینه کارت‌ها یا محصول‌ها */
+    --background-hero: var(--primary-light);  
   
-    --border-color: var(--secondary-dark);      /* 🧱 رنگ مرزها و باکس‌ها */
+    --border-color: var(--secondary-dark);   
   
     /* ==== 💬 رنگ متن‌ها ==== */
-    --text-main: var(--black);                  /* 🖋 متن اصلی سایت */
-    --text-secondary: var(--gray);              /* 📄 متن ثانویه، توضیح زیر محصول */
-    --text-inverse: var(--white);               /* 🌚 متن روی زمینه تیره */
+    --text-main: var(--black);                  
+    --text-secondary: var(--gray);            
+    --text-inverse: var(--white);              
 
     /*رادیوس و اسپیسینگ‌ها (برای سازگاری کامپوننت‌ها):*/
     --radius-sm: 10px;
@@ -185,16 +185,16 @@ width: 110px ;}
 .login-link {
     text-decoration: none; /* خط زیر لینک رو حذف کن */
     color: var(--primary-dark); /* رنگ پیش‌فرض آیکون */
-    font-size: 24px; /* اندازه آیکون اگر دوست داری بزرگ‌تر بشه */
-    display: inline-block; /* این مهمه */
-    cursor: pointer; /* موس رو به حالت دست تبدیل میکنه */
+    font-size: 24px; 
+    display: inline-block; 
+    cursor: pointer; 
     transition: color 0.5s ease;
     size: 40px;
 
   }
   
   .login-link:hover {
-    color: var(--secondary); /* وقتی موس رفت روش، رنگ آیکون عوض شه */
+    color: var(--secondary); 
     
   }
   /*-----------------------------------------------------------------------------------*/
@@ -256,7 +256,7 @@ width: 110px ;}
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
-    margin-top: 10px; /* فاصله از هدر */
+    margin-top: 10px; 
     direction: rtl;
     background-color: var(--background-hero)
   }
@@ -338,7 +338,7 @@ text-align: center;
 .change-language a:hover {
   background-color: var(--primary-dark);
 }
-/*gpt style for gallery ================================================================*/
+/* style for gallery ================================================================*/
 .product-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -642,6 +642,16 @@ h1 , h2 {
   font-family: 'Vazirmatn' , sans-serif;
 
 }
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: block;
+}
+
+
+
 /*--------------------------------add product Section-------------*/
                                  
 .admin-panel-add-product {
@@ -766,8 +776,8 @@ select{
 
 /*footer in index--------------------------------------------------*/
 .footer {
-  background-color: var(--primary-dark); /* سبز کله غازی */
-  color: var(--secondary-light); /* کرمی */
+  background-color: var(--primary-dark); 
+  color: var(--secondary-light); 
   font-family: 'Vazir', sans-serif;
   padding: 40px 20px 20px;
   direction: rtl;
@@ -834,3 +844,65 @@ select{
   padding-top: 10px;
 }
 
+/*==================================about us ================================*/
+.about-us{
+  font-family: 'Vazirmatn' , sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-light);
+  color: #2c3e50;
+  direction: rtl;
+}
+
+.header-about-us{
+  background-color: var(--primary);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about-us-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.about-us-main{
+   max-width: 900px;
+   margin: auto;
+   padding: 2rem 1rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+section p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✓";
+  color: var(--primary);
+  margin-left: 0.5rem;
+}
+
+@media (max-width:600px){
+  .about-us-header h1 {
+    font-size:1.5 rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+}
